@@ -1,45 +1,52 @@
-🕵️‍♂️ Real or Render – Deepfake Detection System
-📖 Overview
+Perfect, thanks for sharing the folder structure 👍
+Based on **exactly what you uploaded** (Next.js frontend + image/video verification + Python API file), here is a **resume-ready, recruiter-friendly README** that matches your **Deepfake project description**.
 
-Real or Render is a deepfake detection project designed to identify whether an image or video is real or AI-generated.
-The project combines a modern Next.js frontend with a Python-based deepfake detection backend, focusing on image and video verification.
+You can **copy–paste this directly into `README.md`**.
 
-This project is built to address the growing challenge of media authenticity and misinformation caused by deepfake technology.
+---
 
-🚀 Features
+# 🕵️‍♂️ Real or Render – Deepfake Detection System
 
-Upload and verify images for deepfake detection
+## 📖 Overview
 
-Upload and verify videos for deepfake detection
+**Real or Render** is a deepfake detection project designed to identify whether an image or video is **real** or **AI-generated**.
+The project combines a **modern Next.js frontend** with a **Python-based deepfake detection backend**, focusing on image and video verification.
 
-Clean and responsive UI built with Next.js & Tailwind CSS
+This project is built to address the growing challenge of **media authenticity and misinformation** caused by deepfake technology.
 
-CNN-based deepfake classification (backend)
+---
 
-Verification result display
+## 🚀 Features
 
-Modular and scalable project structure
+* Upload and verify **images** for deepfake detection
+* Upload and verify **videos** for deepfake detection
+* Clean and responsive UI built with **Next.js & Tailwind CSS**
+* CNN-based deepfake classification (backend)
+* Verification result display
+* Modular and scalable project structure
 
-🧠 Tech Stack
-Frontend
+---
 
-Next.js (App Router)
+## 🧠 Tech Stack
 
-TypeScript
+### Frontend
 
-Tailwind CSS
+* Next.js (App Router)
+* TypeScript
+* Tailwind CSS
 
-Backend / ML
+### Backend / ML
 
-Python
+* Python
+* TensorFlow / Keras
+* OpenCV
+* CNN (Convolutional Neural Network)
 
-TensorFlow / Keras
+---
 
-OpenCV
+## 📂 Project Structure
 
-CNN (Convolutional Neural Network)
-
-📂 Project Structure
+```
 real-or-render/
 │
 ├── app/
@@ -63,73 +70,70 @@ real-or-render/
 ├── package.json
 ├── next.config.ts
 └── README.md
+```
 
-⚙️ How It Works
+---
 
-User uploads an image or video via the frontend.
+## ⚙️ How It Works
 
-The file is sent to the backend API.
+1. User uploads an **image or video** via the frontend.
+2. The file is sent to the backend API.
+3. A **CNN model** processes the input and extracts facial features.
+4. The model predicts whether the media is **Real** or **AI-Generated**.
+5. The result is displayed on the UI.
 
-A CNN model processes the input and extracts facial features.
+---
 
-The model predicts whether the media is Real or AI-Generated.
-
-The result is displayed on the UI.
-
-📊 Model Evaluation
+## 📊 Model Evaluation
 
 The deepfake classification model is evaluated using:
 
-Accuracy
-
-Precision
-
-Recall
-
-F1-Score
+* Accuracy
+* Precision
+* Recall
+* F1-Score
 
 These metrics help ensure reliable and balanced performance.
 
-🎯 Learning Outcomes
+---
 
-Practical experience with CNNs for computer vision
+## 🎯 Learning Outcomes
 
-Understanding deepfake detection techniques
+* Practical experience with CNNs for computer vision
+* Understanding deepfake detection techniques
+* Full-stack integration (Frontend + ML backend)
+* Clean project structuring for real-world applications
 
-Full-stack integration (Frontend + ML backend)
+---
 
-Clean project structuring for real-world applications
+## 📌 Use Case
 
-📌 Use Case
+* Academic and research purposes
+* Learning project for deepfake detection
+* Demonstration of AI + Full-Stack integration
 
-Academic and research purposes
+---
 
-Learning project for deepfake detection
+## ⚠️ Disclaimer
 
-Demonstration of AI + Full-Stack integration
-
-⚠️ Disclaimer
-
-This project is developed for educational and research purposes only.
+This project is developed **for educational and research purposes only**.
 It is not intended for production or legal decision-making.
 
-👨‍💻 Author
+---
 
-Rohit Ghanvat
+## 👨‍💻 Author
+
+**Rohit Ghanvat**
 B.E. Artificial Intelligence & Data Science
 
-⭐ Future Improvements
+---
 
-Improve model accuracy with larger datasets
+## ⭐ Future Improvements
 
-Add real-time video analysis
+* Improve model accuracy with larger datasets
+* Add real-time video analysis
+* Deploy backend using FastAPI
+* Cloud deployment (AWS / GCP)
 
-Deploy backend using FastAPI
+---
 
-Cloud deployment (AWS / GCP)
-
-✅ This README is:
-
-✔ Resume-aligned
-✔ Interview-ready
-✔ Recruiter-friendly
