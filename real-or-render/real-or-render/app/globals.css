@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 262 83.3% 57.8%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 262 83.3% 57.8%;
+    --radius: 0.75rem;
+
+    /* Custom colors */
+    --neon-blue: 210 100% 60%;
+    --cyber-purple: 280 100% 50%;
+    --highlight: 320 100% 60%;
+  }
+
+  .dark {
+    --background: 270 50% 5%;
+    --foreground: 210 40% 98%;
+    --card: 270 50% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 270 50% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 262 83.3% 57.8%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 270 30% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 270 30% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 270 30% 15%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 270 30% 20%;
+    --input: 270 30% 20%;
+    --ring: 262 83.3% 57.8%;
+
+    /* Custom colors */
+    --neon-blue: 210 100% 60%;
+    --cyber-purple: 280 100% 50%;
+    --highlight: 320 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border)); /* Use CSS variable directly */
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    /* Apply the corresponding CSS property directly */
+    letter-spacing: 0.05em; /* This is the default value for tracking-wider */
+  }
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at center, hsl(var(--cyber-purple) / 0.3) 0%, hsl(var(--background) / 1) 70%);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px hsl(var(--neon-blue) / 0.5), 0 0 20px hsl(var(--neon-blue) / 0.3);
+}
+
+.glow-border {
+  box-shadow: 0 0 10px hsl(var(--neon-blue) / 0.5), 0 0 20px hsl(var(--neon-blue) / 0.3);
+}
+
+.cyber-grid {
+  background-size: 50px 50px;
+  background-image: linear-gradient(to right, hsl(var(--border) / 0.1) 1px, transparent 1px),
+  linear-gradient(to bottom, hsl(var(--border) / 0.1) 1px, transparent 1px);
+}
+
+.parallax-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.scan-animation {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, hsl(var(--neon-blue)), transparent);
+  animation: scan 2s linear infinite;
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.noise-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  z-index: -1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
