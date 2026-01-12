@@ -1,10 +1,3 @@
-Perfect, thanks for sharing the folder structure 👍
-Based on **exactly what you uploaded** (Next.js frontend + image/video verification + Python API file), here is a **resume-ready, recruiter-friendly README** that matches your **Deepfake project description**.
-
-You can **copy–paste this directly into `README.md`**.
-
----
-
 # 🕵️‍♂️ Real or Render – Deepfake Detection System
 
 ## 📖 Overview
